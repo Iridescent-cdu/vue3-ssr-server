@@ -6,7 +6,6 @@ const { merge } = require('webpack-merge')
 const baseCongfig = require('./base.config')
 
 module.exports = merge(baseCongfig,{
-  {
     target: 'web',
     entry: './src/client/index.js',
     output: {
@@ -20,5 +19,4 @@ module.exports = merge(baseCongfig,{
         __VUE_PROD_DEVTOOLS__: false,
       }),
     ],
-  }
 })
